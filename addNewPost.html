@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Find Room Mates">
+        <meta name="keywords" content="Find Room Mates">
+        <meta name="author" content="findrommie.com">
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <!-- Bootstrap core CSS -->
+        <link id="switch_style" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery_002.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.css" media="screen"> 
+        <style type="text/css">
+            .link_men{background:#d5d5c6;margin:3px;margin-top:10px;border: 1px solid #999999}
+        </style>
+    </head>
+
+    <body data-twttr-rendered="true">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <img src="assets/images/logo.jpg" title="findroomie" height="44"  width="65" alt="findroomie"/>
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right visible-xs">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul> 
+                    <div class="nav navbar-nav navbar-right hidden-xs">
+                        <div class="row">
+
+                            <div class="pull-right">
+                                <a href="index.html">Home</a> |
+                                <a href="register.html">Register</a> | 
+                                <a href="contactus.html">Contact Us</a>
+                            </div>	
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+        <div class="jumbotron home-tron-search well">
+            <div class="jumbotron home-tron-search well ">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <div class="navbar-header">
+                                <div class="logo-home" style="float:left;margin-top:-30px;margin-left:6px">
+                                    <img src="assets/images/home.png" style="" width="50" height="45" title="findroomie" alt="findroomie"/>
+                                </div>                                
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a href="index.html" class="navbar-brand ">
+                                    <span class="logo"><strong>findRoomie</strong><span class="handwriting">.COM</span><br>
+                                        <small>find your roommate ...</small></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <br/>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="sidebar-account">		
+                        <div class="row ">
+                            <div class="col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Welcome:<i> Session Member</i></div>
+                                    <div class="panel-body">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="dashboard.html" class="link_men">Dashboard</a>
+                                            </li>						
+                                            <li>
+                                                <a href="changeProfile.html" class="link_men">My Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="listMyRooms.html" class="link_men">Manage My Rooms</a>
+                                            </li>
+                                            <li>
+                                                <a href="#addNewPost.html" class="link_men">Post New Room</a>
+                                            </li>
+                                            <li>
+                                                <a href="logout.html" class="link_men">Logout</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>       
+                </div>
+
+                <div class="col-sm-9">
+                    <form action="" method="post" class="form-vertical" enctype="multipart/form-data">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Choose category</div>
+                            <div class="panel-body">
+                                <div class="row">  
+                                    <div class="col-sm-12 ">
+
+                                        <div class="form-group">
+
+                                            <div class="row">
+                                                <div style="margin-top: 10px;" class="col-sm-2">
+                                                    <label>Category</label>
+
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <select required name="cms_id" class="form-control " id="category">
+                                                        <option value="" >Choose a category</option>
+
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>			
+                                    </div>			
+                                </div>			
+                            </div>			
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Website details</div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+                                            <label>Title </label>
+                                            <input value="" name="content_title" required type="text" class="form-control ">
+                                             </div>
+                                        <br/><br/>
+                                        <div class="col-sm-12">
+                                            <label>Url </label>
+                                            <input value="" name="site_url" required type="url" class="form-control ">
+                                           </div>
+                                        <div class="col-sm-12"><br>
+                                            <label>Description </label>
+                                            <textarea style="width: 99%" name="long_description" rows="6" class="form-control col-sm-8 expand"></textarea>
+                                        </div>
+
+                                        <div class="col-sm-12"><br>
+                                            <label>Keywords</label>
+                                            <input value="" name="keywords" type="text" class="form-control ">
+                                        </div>		
+                                        <div class="col-sm-12"><br>
+                                            <label>Address</label>
+                                            <input value="" name="address" type="text" class="form-control ">
+                                        </div>		
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>			
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Add photos</div>
+                            <div class="panel-body">
+                                <div class="col-sm-11">
+                                    <div class="row" style="margin-left:10px;background:#E7F1FD;padding:10px;">
+                                        <div class="doc-data">
+                                            <div class="doc-data-wrapper">
+                                                <input size="25" class="form-control " name="info_upload_title[]" class="info_upload_title" placeholder="title in english" type="text" />&nbsp;&nbsp;&nbsp;
+                                                <input size="25"  style="display:inline;margin-top:10px;" name="doc_data[]" class="doc_data" type="file" />
+                                                <span><a class="up-remove" href="javascript:void(0);"><?php echo 'Remove'; ?></a></span>
+                                            </div>
+                                            <div style="margin-top:10px;" id="max-upload-size">Maximum Filesize: 2 MB</div>
+                                            <a id="up-add-more" href="#">Add More</a>
+                                        </div>
+                                        <div class="clear" style="clear:both;"></div>
+                                        <strong><div style="display: none;" id="error_doc_data" class="subCont"><label for="doc_data"></label></div></strong>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Complete ad</div>
+                            <div class="panel-body">
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" required value="Y"> I agree to the terms and conditions and regulations.
+                                    </label>
+                                </div>
+
+                                <br>
+                                <button class="btn btn-primary pull-right" type="submit" value="submit" name="submit"><i class="icon-ok"></i>Publish Post</button>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </form></div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-xs-12">
+                        <p><strong>© Find Roomie 2015</strong></p>
+                        <p>All rights reserved</p>                    </div>			
+
+                    <div class="col-sm-8 col-xs-12">
+                        <p class="footer-links">
+                            <a href="index.html" class="active">Home</a>
+                            <a href="contactus.html">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery_livequery.js"></script>
+        <script language="javascript">
+            $(document).ready(function () {
+                /*
+                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX UPLOAD FILE PORTION EVENTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                 */
+                $('#up-add-more').click(function (e) {
+                    e.preventDefault();
+                    $('#max-upload-size').before('<div class="doc-data-wrapper">' + $('.doc-data-wrapper:last').html() + '</div>');
+                    return false;
+                });
+                $('a.up-remove').livequery('click', function (e) {
+                    e.preventDefault();
+                    try {
+                        var fileFieldHtml = '<div class="doc-data-wrapper">' + $('.doc-data-wrapper:last').html() + '</div>';
+                        if ($('.doc-data').children().not('a, #max-upload-size').size() == 1) {
+                            $(this).parent().parent().remove();
+                            $('#max-upload-size').before(fileFieldHtml);
+                        }
+                        else {
+                            $(this).parent().parent().remove();
+                        }
+                    }
+                    catch (exec) {
+
+                    }
+                });
+            });
+        </script>
+        <script src="assets/js/bootstrap.js"></script>   
+        <script src="assets/js/jquery.flot.js"></script> 
+
+    </body>
+
+</html>

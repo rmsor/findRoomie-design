@@ -15,6 +15,9 @@
         <link href="assets/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/jquery_002.css" media="screen">
         <link rel="stylesheet" type="text/css" href="assets/css/jquery.css" media="screen"> 
+        <style type="text/css">
+            .link_men{background:#d5d5c6;margin:3px;margin-top:10px;border: 1px solid #999999}
+        </style>
     </head>
 
     <body data-twttr-rendered="true">
@@ -72,6 +75,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container">
             <br/>
             <div class="row">
@@ -111,65 +115,79 @@
 
                 <div class="col-sm-9">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Dashboard</div>
+                        <div class="panel-heading">Update Your Profile</div>
                         <div class="panel-body">
-                            <style type="text/css">
-                                .dash li{
-                                    list-style-type: none;
-                                    margin:15px;
-                                    display:inherit;
-                                    float:left;
-                                }
-                                .link_men{background:#d5d5c6;margin:3px;margin-top:10px;border: 1px solid #999999}
-                                .dash li a {font-size:16px;}
-                            </style>
-                            <div class="row">
 
+                            <br><div class="row">
                                 <div class="col-sm-12">
-                                    <ul class="dash">
-                                        <li>
-                                            <a class="delete btn btn-info btn-sm active"  href="#" >Dashboard</a>
-                                        </li>						
-                                        <li>
-                                            <a class="delete btn btn-info btn-sm active" href="#">My Profile</a>
-                                        </li>
-                                        <li>
-                                            <a class="delete btn btn-info btn-sm active" href="#" >Manage My Rooms</a>
-                                        </li>
-                                        <li>
-                                            <a class="delete btn btn-info btn-sm active" href="#">Post New Room</a>
-                                        </li>
-                                        <li>
-                                            <a  class="delete btn btn-info btn-sm active" href="#">Logout</a>
-                                        </li>
-                                    </ul>
+                                    <div class="alert alert-info">
+                                        <h3>Note:</h3>
+                                        <p>Leave the password fields blank if you don't want to change your password.</p>
+                                    </div>
+
                                 </div>
+                            </div><br>
+                            <form method="post" action=""  class="form-vertical">
+                                <fieldset>
 
-                            </div>
-                            <br/>
-                            <div class="row">
+                                    <div class="row">  
+                                        <div class="col-sm-12 ">
 
-                                <div style="border-right: 1px solid #DADADA; text-align: center;" class="col-sm-3 col-xs-6">
-                                    <h3 style="text-align: center;">Total credits</h3>
-                                    <p></p>
-                                </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Name</label>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <select class="form-control" name="title">
+                                                            <option value="Mr" >Mr</option>
+                                                            <option value="Mrs" >Mrs</option>
+                                                            <option value="Miss" >Miss</option>
+                                                            <option value="Ms" >Ms</option>
+                                                            <option value="Dr" >Dr</option>
+                                                            <option value="Professor" >Professor</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <input required value="" type="text" name="first_name" placeholder="Your first name" id="exampleInputEmail1" class="form-control ">
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <input required value="" type="text" name="last_name" placeholder="Your second name" id="exampleInputEmail1" class="form-control ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPhone">Phone</label>
+                                                <input name="phone" value="" type="text" placeholder="Enter Phone" id="exampleInputPhone" class="form-control ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPhone">Company</label>
+                                                <input name="company" value="" type="text" placeholder="Enter Company" id="exampleInputCompany" class="form-control ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputAddress">Address</label>
+                                                <input name="address" value="" type="text" placeholder="Enter Address" id="exampleInputAddress" class="form-control ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Password</label>
+                                                <input  name="password" type="password" placeholder="At least 6 characters" id="exampleInputPassword1" class="form-control">
+                                                <input name="old_password" value="" type="hidden" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Confirm password</label>
+                                                <input  name="con_password" type="password" placeholder="Confirm your password" id="exampleInputPassword1" class="form-control">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> We can contact you with relevant offers and news
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <button type="submit" name="submit" value="update" class="btn btn-primary" type="submit">Save details</button>
+                                        </div>
+                                    </div>
 
-                                <div style="border-right: 1px solid #DADADA; text-align: center;" class="col-sm-3 col-xs-6">
-                                    <h3 style="text-align: center;">Sites published</h3>
-                                    <p></p>
-                                </div>
-
-                                <div style="border-right: 1px solid #DADADA; text-align: center;" class="col-sm-3 col-xs-6">
-                                    <h3 style="text-align: center;">Views this month</h3>
-                                    <p></p>
-                                </div>
-
-                                <div style="text-align: center;" class="col-sm-3 col-xs-6">
-                                    <h3 style="text-align: center;">Total Sites views</h3>
-                                    <p></p>
-                                </div>
-
-                            </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                 </div>
